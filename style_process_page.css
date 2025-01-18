@@ -1,0 +1,53 @@
+/* styles.css */
+
+/* Payment Processors Section */
+.payment-processors {
+    padding: 2rem;
+    margin: 2rem;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment-processors h2 {
+    border-bottom: 2px solid #cc1a1a;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.processor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.processor-card {
+    flex: 1 1 calc(30% - 1rem);
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.processor-card h3 {
+    color: #cc1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.processor-card p {
+    margin-bottom: 1rem;
+}
+
+.processor-card .btn {
+    display: inline-block;
+    background-color: #cc1a1a;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.processor-card .btn:hover {
+    background-color: #b51717;
+}
