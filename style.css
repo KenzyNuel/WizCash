@@ -1,0 +1,33 @@
+/* styles.css */
+
+/* About Zcash Section */
+.about-zcash, .features, .resources {
+    padding: 2rem;
+    margin: 2rem;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-zcash h2, .features h3, .resources h3 {
+    border-bottom: 2px solid #cc1a1a;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.features ul, .resources ul {
+    list-style: disc inside;
+}
+
+.features ul li, .resources ul li {
+    margin: 0.5rem 0;
+}
+
+.resources ul li a {
+    color: #cc1a1a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.resources ul li a:hover {
+    text-decoration: underline;
+}
