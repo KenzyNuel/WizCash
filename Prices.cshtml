@@ -1,0 +1,45 @@
+@model IEnumerable<CryptoPrice>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices - CryptoWorld</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>CryptoWorld</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Prices">Prices</a></li>
+                <li><a href="/AboutZcash">About Zcash</a></li>
+                <li><a href="/PaymentProcessors">Payment Processors</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="updates">
+            <h2>Live Cryptocurrency Prices</h2>
+            <div class="price-container">
+                @foreach (var price in Model)
+                {
+                    <div class="price-card">
+                        <h3>@price.Name (@price.Symbol)</h3>
+                        <p>$@price.PriceUSD</p>
+                    </div>
+                }
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CryptoWorld. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
