@@ -1,0 +1,46 @@
+@model IEnumerable<PaymentProcessor>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Processors - CryptoWorld</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>CryptoWorld</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Prices">Prices</a></li>
+                <li><a href="/AboutZcash">About Zcash</a></li>
+                <li><a href="/PaymentProcessors">Payment Processors</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="payment-processors">
+            <h2>Trusted Payment Processors</h2>
+            <div class="processor-list">
+                @foreach (var processor in Model)
+                {
+                    <div class="processor-card">
+                        <h3>@processor.Name</h3>
+                        <p>@processor.Description</p>
+                        <a href="@processor.Website" target="_blank" class="btn">Visit @processor.Name</a>
+                    </div>
+                }
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CryptoWorld. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
