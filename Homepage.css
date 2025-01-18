@@ -1,0 +1,83 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.header {
+    background-color: #cc1a1a;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.header .logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #eaeaea;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero .btn {
+    display: inline-block;
+    background-color: #cc1a1a;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.updates, .payment-links {
+    padding: 2rem;
+    margin: 2rem;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.updates h2, .payment-links h2 {
+    border-bottom: 2px solid #cc1a1a;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.price-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+}
+
+.price-card {
+    padding: 1rem;
+    background: #f4f4f4;
+    text-align: center;
+    border-radius: 5px;
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
